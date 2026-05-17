@@ -435,7 +435,10 @@ export default function App() {
                     playsInline
                     poster={`https://images.unsplash.com/photo-${item.day === 1 ? '1504280390367-361c6d9f38f4' : item.day === 2 ? '1441974231531-c6227db76b6e' : item.day === 3 ? '1501785888041-af3ef285b470' : '1502675135487-e971002a6adb'}?auto=format&fit=crop&q=80&w=1200`}
                   >
-                    <source src={item.day === 4 ? '/第四天.mp4' : `/day${item.day}.mp4`} type="video/mp4" />
+                    <source 
+                      src={item.day === 4 ? '/第四天.mp4' : `/day${item.day}.mp4`} 
+                      type="video/mp4" 
+                    />
                   </video>
                   
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent pointer-events-none" />
@@ -707,7 +710,7 @@ export default function App() {
                 className="relative z-10 aspect-[3/4.5] w-full rounded-[40px] overflow-hidden group shadow-[0_50px_100px_-20px_rgba(0,0,0,0.1)] border-8 border-white"
               >
                  <img 
-                  src="/profile.jpg" 
+                  src="https://drive.google.com/thumbnail?id=1LU0g1CB1xm4ApKYZir2wITqGpxISkVVu&sz=w1200" 
                   alt="郭人瑄 Profile" 
                   onError={(e) => {
                     e.currentTarget.src = "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=800";
